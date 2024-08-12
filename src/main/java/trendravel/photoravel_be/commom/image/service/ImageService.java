@@ -46,15 +46,11 @@ public class ImageService {
         return urlList;
     }
 
-
-    public void deleteAllImages(List<String> imageUrls){
-        if(imageUrls.isEmpty()){
-            //예외 처리
-        }
-        for (String imageUrl : imageUrls) {
-            s3Template.deleteObject(bucketName, s3Template.read(bucketName, imageUrl, String.class));
-        }
-    }
+    /**
+     *
+     * 이미지 삭제 기능 오류로 인한 삭제.
+     * 이미지 테이블에 대한 추가 고민과 프엔과의 상의 필요.
+     */
 
 
     public List<String> getImagesName(List<MultipartFile> multipartFiles){
