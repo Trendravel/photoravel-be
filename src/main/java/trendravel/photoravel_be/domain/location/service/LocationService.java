@@ -5,11 +5,11 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import trendravel.photoravel_be.commom.image.service.ImageService;
 import trendravel.photoravel_be.domain.location.dto.request.LocationRequestDto;
 import trendravel.photoravel_be.domain.location.dto.response.LocationResponseDto;
 import trendravel.photoravel_be.db.location.Location;
 import trendravel.photoravel_be.db.respository.location.LocationRepository;
-import trendravel.photoravel_be.commom.service.ImageService;
 import trendravel.photoravel_be.domain.location.dto.response.LocationSingleReadResponseDto;
 import trendravel.photoravel_be.domain.review.dto.response.RecentReviewsDto;
 

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import trendravel.photoravel_be.commom.service.ImageService;
+import trendravel.photoravel_be.commom.image.service.ImageService;
 import trendravel.photoravel_be.db.location.Location;
 import trendravel.photoravel_be.db.respository.location.LocationRepository;
 import trendravel.photoravel_be.db.respository.review.ReviewRepository;
